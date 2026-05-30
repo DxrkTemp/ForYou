@@ -30,14 +30,8 @@ document.getElementById("yesBtn").addEventListener("click", () => {
 
 const noBtn = document.getElementById("noBtn");
 
-noBtn.style.position = "fixed";
-noBtn.style.zIndex = "9999";
-noBtn.style.left = "50%";
-noBtn.style.top = "50%";
-
 function moveButton() {
-
-    const padding = 20;
+    const padding = 15;
 
     const maxX = window.innerWidth - noBtn.offsetWidth - padding;
     const maxY = window.innerHeight - noBtn.offsetHeight - padding;
@@ -45,12 +39,17 @@ function moveButton() {
     const x = Math.random() * maxX;
     const y = Math.random() * maxY;
 
+    noBtn.style.position = "fixed";
     noBtn.style.left = `${x}px`;
     noBtn.style.top = `${y}px`;
+
+    noBtn.style.transition = "0.15s ease";
 }
 
 noBtn.addEventListener("mouseenter", moveButton);
+noBtn.addEventListener("mouseover", moveButton);
 noBtn.addEventListener("touchstart", moveButton);
+noBtn.addEventListener("click", moveButton);
 
 const buttons = document.querySelectorAll(".next-btn");
 
