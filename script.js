@@ -63,10 +63,12 @@ function createHeart() {
     heart.className = "heart";
 
     const hearts = ["❤", "💖", "💕", "💗", "💘"];
-
     heart.innerHTML = hearts[Math.floor(Math.random() * hearts.length)];
 
     heart.style.left = Math.random() * 100 + "vw";
+
+    heart.style.bottom = "-20px";
+
     heart.style.fontSize = 15 + Math.random() * 20 + "px";
     heart.style.animationDuration = 5 + Math.random() * 4 + "s";
 
