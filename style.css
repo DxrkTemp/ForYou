@@ -263,24 +263,26 @@ button {
 
 .heart {
     position: fixed;
+    bottom: 0;
     color: #ff7db2;
-
-    animation: floatUp linear forwards;
-
     opacity: 0.8;
+    pointer-events: none;
+
+    animation-name: floatUp;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
 
 @keyframes floatUp {
-    from {
+    0% {
         transform: translateY(0) scale(0.5);
         opacity: 1;
     }
-    to {
+    100% {
         transform: translateY(-110vh) scale(1.4);
         opacity: 0;
     }
 }
-
 @media (max-width: 768px) {
 
     .screen {
