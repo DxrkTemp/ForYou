@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ff4f95">
+
+    <title>For Someone Special</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet"
+    >
+</head>
+<body>
+
+    <div id="hearts"></div>
+
+    <section id="giftScreen" class="screen active">
+        <div class="card">
+            <h1 class="title">For Someone Special</h1>
+
+            <img
+                src="assets/BlushingCat.gif"
+                class="gift-image"
+                alt="Gift"
+                draggable="false"
+            >
+
+            <p class="subtitle">I prepared something special for you.</p>
+            <p class="subtitle">Would you like to open your gift?</p>
+
+            <div class="buttons">
+                <button id="yesBtn" class="pink-btn">Open Gift</button>
+                <button id="noBtn" class="gray-btn">No</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="openingScreen" class="screen">
+        <div class="card">
+            <img
+                src="assets/HappyCat.gif"
+                class="opening-gif"
+                alt="Opening"
+                draggable="false"
+            >
+
+            <h1 class="title">Opening...</h1>
+            <p class="subtitle">Please wait while your surprise is being prepared.</p>
+        </div>
+    </section>
+
+    <section id="galleryScreen" class="screen">
+        <div class="card">
+            <h1 class="title">My Favorite Photos</h1>
+            <p class="subtitle">Every picture holds a special memory.</p>
+
+            <div class="gallery">
+                <img src="assets/Photo1.jpg" alt="Photo 1" loading="lazy">
+                <img src="assets/Photo2.jpg" alt="Photo 2" loading="lazy">
+                <img src="assets/Photo3.jpg" alt="Photo 3" loading="lazy">
+                <img src="assets/Photo4.jpg" alt="Photo 4" loading="lazy">
+            </div>
+
+            <button class="pink-btn next-btn">Continue</button>
+        </div>
+    </section>
+
+    <section id="bouquetScreen" class="screen">
+        <div class="card">
+            <h1 class="title">Flowers For You</h1>
+
+            <img
+                src="assets/Roses.png"
+                class="bouquet-image"
+                alt="Flowers"
+                draggable="false"
+            >
+
+            <div class="message">
+                These flowers are for you.
+                <br><br>
+                They may fade with time, but my appreciation, admiration, and care for you never will.
+                <br><br>
+                You deserve all the beautiful things in the world.
+            </div>
+
+            <button class="pink-btn next-btn">Continue</button>
+        </div>
+    </section>
+
+    <section id="messageScreen" class="screen">
+        <div class="card">
+            <h1 class="title">A Letter For You</h1>
+
+            <div class="letter">
+                Dear Wifeyy,
+                <br><br>
+                Thank you for every smile, every laugh, every memory, and every moment we've shared together.
+                <br><br>
+                You have a way of making ordinary days feel extraordinary.
+                <br><br>
+                Your kindness, your presence, and the happiness you bring mean more than words can describe.
+                <br><br>
+                No matter where life takes us, I will always treasure the memories we create together.
+                <br><br>
+                Thank you for being you.
+            </div>
+
+            <button class="pink-btn next-btn">One Last Thing</button>
+        </div>
+    </section>
+
+    <section id="finalScreen" class="screen">
+        <div class="card">
+            <img
+                src="assets/KissCat.gif"
+                class="final-image"
+                alt="Final"
+                draggable="false"
+            >
+
+            <h1 class="title">Thank You</h1>
+
+            <p class="subtitle">
+                Thank you for opening my gift.
+                <br><br>
+                I hope it made you smile.
+                <br><br>
+                You make my world brighter every day.
+            </p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
